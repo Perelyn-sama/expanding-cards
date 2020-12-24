@@ -1,0 +1,48 @@
+* {
+  font-family: Lato;
+}
+#container {
+  display: flex;
+  justify-content: space-between;
+}
+@keyframes example {
+  0% {
+    width: 7em;
+  }
+  100% {
+    width: 78em;
+  }
+}
+#one {
+  background-color: #fc7326;
+  height: 7em;
+  width: 7em;
+  border-radius: 0.5em;
+
+  /* flex-grow: 1; */
+}
+#one:focus {
+  animation-name: example;
+  animation-duration: 4s;
+}
+#two {
+  background-color: #b04a12;
+  height: 7em;
+  width: 7em;
+  border-radius: 0.5em;
+  margin-left: 10px;
+}
+#three {
+  background-color: #32fc86;
+  height: 7em;
+  width: 7em;
+  border-radius: 0.5em;
+  margin-left: 10px;
+}
+#four {
+  background-color: #b03594;
+  height: 7em;
+  width: 7em;
+  border-radius: 0.5em;
+  margin-left: 10px;
+}
