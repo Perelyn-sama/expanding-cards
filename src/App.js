@@ -36,7 +36,13 @@ const four = () => {
   setThreesty({width: '7em'})
   setFoursty({width: '80em'})
 }
-
+// Was trying to use file uploaded
+let img = [];
+const show = (e) => {
+  img.push(e.target.files[0]);
+  console.log(URL.createObjectURL(e.target.files[0]))
+}
+console.log(img)
   return (
     <React.Fragment>
     <div id='container'>
@@ -45,8 +51,9 @@ const four = () => {
     <div onClick={three} style={threeSty} id='three' >The third</div>
     <div onClick={four} style={fourSty} id='four' >The fourth</div>
         <a id='link' href='#'/>
-
     </div>
+    <input onChange={show} type='file'/>
+    <img src={img} />
     </React.Fragment>
   );
 }
